@@ -1,7 +1,6 @@
 const ModalController = ({ modal, btnOpen, btnClose }) => {
 	const buttonElems = document.querySelectorAll(btnOpen);
 	const modalElem = document.querySelector(modal);
-	const buttonCloseElem = document.querySelector(btnClose);
 
 	const openModal = (e) => {
 		if (modalElem.style.visibility == 'visible') {
