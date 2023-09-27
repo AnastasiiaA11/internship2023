@@ -3,17 +3,14 @@ const ModalController = ({ modal, btnOpen, btnClose }) => {
 	const modalElem = document.querySelector(modal);
 	const buttonCloseElem = document.querySelector(btnClose);
 
-	const openModal = () => {
-		modalElem.style.visibility = 'visible';
-		modalElem.style.opacity = 1;
-	};
-
-	const closeModal = event => {
-		const target = event.target;
-
-		if (target === buttonCloseElem) {
+	const openModal = (e) => {
+		if (modalElem.style.visibility == 'visible') {
 			modalElem.style.visibility = 'hidden';
 			modalElem.style.opacity = 0;
+		} else {
+			modalElem.style.visibility = 'visible';
+			modalElem.style.opacity = 1;
+			console.log('open', e.target);
 		}
 	};
 
@@ -21,7 +18,6 @@ const ModalController = ({ modal, btnOpen, btnClose }) => {
 		btn.addEventListener('click', openModal);
 	});
 
-	buttonCloseElem.addEventListener('click', closeModal);
 };
 
 ModalController(
