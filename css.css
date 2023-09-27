@@ -1,0 +1,251 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*--------------------*/
+
+.map {
+	position: relative;
+	background: url('city.png');
+	height: 1080px;
+	width: 1920px;
+}
+
+.click {
+	position: absolute;
+}
+
+.click__column {
+	top: 60%;
+	left: 56%;
+}
+
+.click__house {
+	top: 26%;
+	left: 30%;
+}
+
+.click__house__forest {
+	top: 20%;
+	left: 71%;
+}
+
+.click__house__double {
+	top: 45%;
+	left: 76%;
+}
+
+.click__house__big {
+	top: 70%;
+	left: 86%;
+}
+
+.click__house__balcony {
+	top: 68%;
+	left: 23%;
+}
+
+.click__house__roof {
+	top: 46%;
+	left: 35%;
+}
+
+.click__house__building {
+	top: 38%;
+	left: 60%;
+}
+
+.click__house__anthill {
+	top: 64%;
+	left: 70%;
+}
+
+.click__house__stairs {
+	top: 80%;
+	left: 54%;
+}
+
+.open {
+
+	opacity: 0;
+	pointer-events: none;
+	display: flex;
+}
+
+.open__nole {
+	position: absolute;
+	top: 60%;
+	left: 56%;
+}
+
+.open1 {
+	position: absolute;
+	top: 26%;
+	left: 30%;
+}
+
+.open2 {
+	position: absolute;
+	top: 20%;
+	left: 71%;
+}
+
+.open3 {
+	position: absolute;
+	top: 45%;
+	left: 76.1%;
+}
+
+.open4 {
+	position: absolute;
+	top: 70%;
+	left: 85%;
+}
+
+.open5 {
+	position: absolute;
+	top: 68%;
+	left: 23%;
+}
+
+.open6 {
+	position: absolute;
+	top: 46%;
+	left: 35%;
+}
+
+.open7 {
+	position: absolute;
+	top: 38%;
+	left: 60%;
+}
+
+.open8 {
+	position: absolute;
+	top: 64%;
+	left: 70%;
+}
+
+.open9 {
+	position: absolute;
+	top: 80%;
+	left: 5%;
+}
+
+.button {
+
+	border: none;
+	color: white;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 11px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: rgba(62, 102, 190, 0.986);
+}
+
+.text {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: white;
+	width: 100px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+}
